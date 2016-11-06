@@ -5,14 +5,14 @@ date:   2016-11-06 14:42:29 +0100
 categories: jekyll update
 ---
 
-Una explicación más detallada (en inglés) de todos los puntos se puede encontrar en [este video](https://www.youtube.com/watch?v=x1v2tX4_dkQ) sobre el que se basa este texto.
+Una explicación más detallada (en inglés) puede encontrar en [este video](https://www.youtube.com/watch?v=x1v2tX4_dkQ) sobre el que se basa este texto.
 
-Un campo de Galois o un cuerpo finito es una estructura algebráica utilizada entre otras muchas cosas en algoritmos como el [AES](https://es.wikipedia.org/wiki/Advanced_Encryption_Standard), o el [Reed-Solomon](https://es.wikipedia.org/wiki/Reed-Solomon). La intención de este artículo es dotar al lector de unos conocimientos mínimos que le permitan comprenderlos e implementarlos en algún lenguaje de programación.
+Un campo de Galois es una [estructura algebráica](https://es.wikipedia.org/wiki/Estructura_algebraica) utilizada entre otras muchas cosas en algoritmos como el [AES](https://es.wikipedia.org/wiki/Advanced_Encryption_Standard), o el [Reed-Solomon](https://es.wikipedia.org/wiki/Reed-Solomon). La intención de este artículo es dotar al lector de unos conocimientos mínimos que le permitan comprenderlos e implementarlos en algún lenguaje de programación.
 
 
 ## Estructuras algebraicas
 
-Una estructura algebraica viene dada por una tupla de elementos y un conjunto de operaciones aplicables a estos elementos.
+Una estructura algebraica viene dada por una [tupla](https://es.wikipedia.org/wiki/Tupla) de elementos y un conjunto de operaciones aplicables a estos elementos.
 
 $$ E = (\mathbb{Z}, \{+, -\}) $$
 
@@ -25,9 +25,9 @@ Son un tipo de estructura algebráica más estricta:
 Las operaciones `adición` `sustracción` `multiplicación` y `división` se pueden realizar siempre que se cumplan las siguientes propiedades:
 
 - Existe un **elemento neutro** para la adición y la multiplicación:
-- El orden en que se ejecuten *las operaciones* no altera el resultado. (**Asociativa**)
-- El orden de los sumandos no altera la suma, o el orden de los factores no altera el producto. (**Conmutativa** )
-- El resultado de un número multiplicado por la suma de dos o más sumandos, es igual a la suma de los productos de cada sumando por ese número. (**Distributiva**)
+- El orden en que se ejecuten *las operaciones* no altera el resultado. [(Propiedad Asociativa)](https://es.wikipedia.org/wiki/Asociatividad_(%C3%A1lgebra))
+- El orden de los sumandos no altera la suma, o el orden de los factores no altera el producto. [(Propiedad Conmutativa)](https://es.wikipedia.org/wiki/Propiedad_conmutativa)
+- El resultado de un número multiplicado por la suma de dos o más sumandos, es igual a la suma de los productos de cada sumando por ese número. [(Propiedad Distributiva)](https://es.wikipedia.org/wiki/Propiedad_distributiva)
 
 ## Cuerpos finitos
 También llamados **campos de Galois** son un cuerpo definido sobre un conjunto finito de elementos donde el número de elementos ($$n$$) debe ser primo o una potencia de un número primo.
@@ -74,19 +74,19 @@ $$ a_{m-1} X^{m-1} + ... + a_0 X + a_0 $$
 
 Donde $$ a_i \in GF(p^m) $$
 
-Por simplicidad (y porque suele ser bastante utilizado) a partir de ahora tomaremos $$2$$ como valor para $$p$$.
+Para acompañar las explicaciones con ejemplos, tomaremos el caso concreto donde $$p=2$$  $$m=3$$.
 
-#### $$GF(2^3)$$
+#### Sea $$GF(2^3)$$ donde
 
 	p = 2
 	m = 3
 	GF(p) = GF(2) = {0,1}
 
-Por lo que los polinomios tendrán la forma:
+Todos polinomios de $$GF(2^3)$$ tendrán la forma:
 
 $$ ax^2 + ax + a $$
 
-Donde $$ a_i \in GF(2) = \{0, 1\} $$
+Donde a puede tener dos posibles valores $$ a_i \in \{0, 1\} = GF(2) = GF(p)$$
 
 Es decir que la lista completa de polinomios que pertenecen al $$GF(2^3)$$ será:
 
@@ -126,9 +126,10 @@ $$ 110 $$
 $$ 111 $$
 
 
-### Sumas & restas
-La suma y la resta son equivalentes, y sólo hay que sumar/restar cada coeficiente módulo 2.
-Esta operación se puede implementar facilmente mediante un [xor binario](https://es.wikipedia.org/wiki/Disyunci%C3%B3n_exclusiva).
+### Sumas & resta
+Para sumar o restar polinomios en un $$GF(p^n)$$ sólo hay que sumar/restar cada coeficiente módulo $$p$$.
+
+En los campos de Galois donde $$p=2$$ ambas operaciones son equivalentes a un [xor binario](https://es.wikipedia.org/wiki/Disyunci%C3%B3n_exclusiva).
 
 	Ejemplos de suma de polinomios en GF(8)
 
@@ -144,6 +145,6 @@ $$ (x^2 + x + 1) * (x^2 + 1) = x^4 + x^3 + x + 1 $$
 
 por lo que se hace necesario reducir el resultado módulo un polinomio $$C(x)$$ que actuará como `elemento neutro`.
 
-$$ (x^2 + x + 1) * (x^2 + 1) \equiv (x^4 + x^3 + x + 1) mod(C(x)) $$
+$$ (x^2 + x + 1) * (x^2 + 1) \equiv (x^4 + x^3 + x + 1) \bmod C(x) $$
 
-Estos polinomios son conocidos como `primitivas` y se puede demostrar que para todo $$GF(2^m)$$ se pueden encontrar varias.
+La principal caracteristica de estos polinomios es que son irreducibles (no se pueden factorizar). También son conocidos como `primitivas` y para todo $$GF(2^m)$$ se pueden encontrar múltiples primitivas.

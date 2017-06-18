@@ -1,0 +1,117 @@
+---
+layout: post
+title:  "Principios de diseño Software: SRP"
+date:   2017-06-01 16:00:00 +0100
+categories: blog
+---
+
+SOLID, KISS, IOC, DRY... son muchas las siglas que hacen referencia a las buenas prácticas a la hora de diseñar software sin embargo, sigue existiendo una cantidad enorme de programadores que no las aplican dando como resultado un montón de código espagueti ilegible.
+
+## El principio fundamental
+Haciendo un repaso de todos estas recomendaciones, es fácil encontrar un patrón común: la **simplicidad**, dividir las cosas hasta hacerlas tan simples que no hay lugar a error. Las cosas simples y bien separadas permiten ser cambiadas con facilidad, de forma que depurar un bug se reduce a leer una pequeña función.
+
+## S.O.L.I.D.
+Es un término acuñado por el Uncle Bob, autor de uno de los libros que todo programador debería leer, The Clean Code, que hace referencia a 5 principios fundamentales que aunque en su origen están pensados para orientación a objetos, creo que pueden generalizarse y aplicarse en cualquier paradigma y contexto.
+
+### SRP: The Single Responsibility Principle
+
+Haz UNA SOLA COSA y hazla bien, esto se puede aplicar a cualquier nivel: De clase, de función o incluso a nivel de sistema. Lo bueno aquí es que la definición de `cosa` queda abierta y varía según el contexto en el que nos encontremos.
+
+#### A bajo nivel: Funciones
+
+Todo el mundo sabe que una función que hace una sola cosa es más fácil de leer, más fácil de entender y por lo tanto mucho más fácil de depurar y de probar.
+
+Vamos a poner como ejemplo un portero de un bar cuya única función es comprobar si la gente puede entrar o no.
+
+En un principio el requisito dice: `sólo pueden entrar los mayores de edad.` Como resultado tenemos una función que sólo hace una cosa, y es fácil de probar y de leer.
+
+```
+puedePasar(persona){
+   if (persona.edad <= 18){
+	return false;
+   }
+   return true;
+}
+```
+
+Días mas tarde, el jefe de la discoteca decide prohibir entrar con chanclas a la gente independientemente de su edad. La mayoría de los programadores traducirán este cambio inmediatamente:
+
+```
+puedePasar(persona){
+   if(persona.calzado === 'zapatillas'){
+     return false;
+   }
+   if (persona.edad <= 18){
+	 return false;
+   }
+   return true;
+}
+```
+
+De nuevo esto no está necesariamente mal, pero esta función ha pasado de hacer una sola `cosa`  a hacer dos cosas. (Obsérvese que el significado de `cosa` ha variado mientras dábamos el ejemplo).
+
+Aquí es cuando si aplicamos los principios de la buena programación, reescribimos el código aplicando el SRP de forma que cada función haga una sola `cosa`.
+
+```
+puedePasar(persona){
+   return comprobarEdad(persona) && comprobarCalzado(persona);
+}
+
+comprobarEdad(persona){
+   if (persona.edad <= 18){
+	 return false;
+   }
+   return true;
+}
+
+comprobarCalzado(persona){
+   if(persona.calzado === 'zapatillas'){
+     return false;
+   }
+   return true;
+}
+```
+
+Con el tiempo la discoteca crece y el dueño decide abrir una zona informal donde se permite entrar a todo el mundo independientemente de su calzado, siempre que sea mayor de edad.
+
+Si no hubiésemos aplicado los principios, probablemente quede algo asi:
+
+```
+puedePasar(persona, zona){
+  if(zona === 'informal')
+   return persona.edad >= 18;
+  }
+  return (persona.edad >= 18) && (persona.calzado !== zapatillas')
+
+}
+```
+El primer problema que surge es que tenemos código duplicado,  la comparación de la edad esta presente dos veces. Si quisiésemos migrar nuestro sistema a USA, donde la mayoría de edad son 21 años habrá que cambiar el código en dos sitios.
+
+```
+puedePasar(persona, zona){
+  if(zona === 'informal')
+    return comprobarEdad(persona);
+  }
+  return comprobarEdad(persona) && comprobarCalzado(persona);
+}
+```
+
+Esto nos da las siguientes ventajas:
+
+* La función `puedePasar` se lee y se entiende inmediatamente.
+* Podemos probar por separado  mediante pruebas unitarias sencillas `comprobarEdad` y `comprobarCalzado`
+* No es disparatado pensar que nuestro Portero necesitará comprobar la edad o el calzado de la gente para más cosas.
+* En este ejemplo parece una tontería, crear una función `comprobarEdad` y más de uno pensará "si sólo comprueba la edad, no hay lugar a error"  exacto! Además el software suele volverse más complejo con el tiempo, quizá en un futuro tengamos una sesión de tarde donde la edad mínima sean 16 años, eso a la función `puedePasar` le da igual, el solamente comprueba que tiene la edad necesaria.
+
+#### A nivel medio: Clases
+
+Es al nivel para el que fue descrito inicialmente el principio de responsabilidad única, donde una responsabilidad se define como `un motivo para cambiar`.
+
+Este principio incita a que mantengamos una [alta cohesión](https://es.wikipedia.org/wiki/GRASP#Alta_cohesi.C3.B3n_y_bajo_acoplamiento) dentro de nuestras clases de forma que funciones las relacionadas se encuentran dentro de una misma clase y las funciones no relacionadas se encuentran en clases separadas.
+
+Volviendo al ejemplo del portero, podría ser tentador añadir una función `servirCopas` ¿por qué no? tampoco es tan raro y el cliente nos está presionando.
+
+Meses después hay que cambiar el precio de las copas de 5€ a 8€.  El programador encargado de ello actualiza los camareros y sin embargo no salen las cuentas... Después de horas depurando el código descubre que los porteros también ponen copas, pinchan la música y limpian después de cerrar. Cosas que en su día se hacen para salir del paso rápidamente, acaban costando mucho tiempo y por lo tanto dinero.
+
+#### A nivel de sistema
+Este principio de responsabilidad única, y de mantener bajo acoplamiento y alta cohesión en nuestros componentes también se puede aplicar a alto nivel. Ya hace unos años están de moda en arquitectura de sistemas los `microservicios` que de nuevo son sistemas completos con una `responsabilidad única` podríamos tener un servicio de logging, uno de autenticación...etc de nuevo, esto facilita saber donde buscar a la hora de depurar, y el bajo acoplamiento permite reemplazar un componente por otro sin demasiada dificultad.

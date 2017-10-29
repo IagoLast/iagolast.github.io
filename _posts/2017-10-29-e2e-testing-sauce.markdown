@@ -74,7 +74,7 @@ Con el comando `serve` creo un servidor web que sirve el `index.html` de mi web-
 
 Efectivamente, abriendo chrome en `http://localhost:5000` puedo ver mi aplicación funcionando correctamente
 
-<img src="https://iagolast.files.wordpress.com/2017/10/chrome.png"/>
+<img src="https://iagolast.files.wordpress.com/2017/10/screen-shot-2017-10-29-at-21-54-31.png"/>
 
 
 

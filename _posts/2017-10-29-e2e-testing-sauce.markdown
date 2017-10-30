@@ -7,17 +7,17 @@ categories: blog
 
 # E2E testing con Travis,NightWatch y SauceLabs
 
-https://github.com/IagoLast/e2e-travis-saucelabs
+Repo de ejemplo: [https://github.com/IagoLast/e2e-travis-saucelabs](https://github.com/IagoLast/e2e-travis-saucelabs)
 
-Normalmente no pienso en la compatibilidad entre navegadores de mis side-projects y los haga por diversión y para aprender algo por lo que con que funcionen en mi máquina me llega.
-
-Por desgracia el mundo laboral es más complicado y si queremos ser medianamente serios lo mínimo que deberíamos dar es una **lista de navegadores compatibles**.
+Cuando estoy programando un side-project en lo último que pienso es en los navegadores en los que va a funcionar mi código. Normalmente ya es un milagro que funcione en mi máquina! Pero en el mundo real si queremos ser medianamente serios lo mínimo que deberíamos dar es una **lista de navegadores compatibles** con nuestra app o librería.
 
 En este artículo voy a hablar sobre como crear un entorno de integración continua con tests e2e utilizando [Travis](travis-ci.org), [Nightwatch](http://nightwatchjs.org/) y [SauceLabs](https://saucelabs.com/) 
 
 ## Aplicación de ejemplo.
 
-La aplicación que vamos a probar, es una web-app que simplemente muestra `Hello World` utilizando características de `es6` como  `const` o string literals.
+La aplicación que vamos a probar, es una web-app que simplemente muestra `Hello World` utilizando características de `es6` como  [const](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const) o [template literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals).
+
+Por simplicidad toda mi aplicación cabe en un simple `index.html`:
 
 ```html
 <!DOCTYPE html>
@@ -43,9 +43,11 @@ La aplicación que vamos a probar, es una web-app que simplemente muestra `Hello
 </html>
 ```
 
+Como se puede ver lo único que hace el esta "app" pintar un `h1` con el contenido `Hello WORLD` a el body.
+
 ## Sirviendo la app en local
 
-Con [serve](https://github.com/zeit/serve) se puede crear un servidor web facilmente de forma que se puede probar una app en local.
+[serve](https://github.com/zeit/serve) es una librería de `node` que permite crear un servidor web facilmente para probar una web en local.
 
 Se puede instalar escribiendo:
 
@@ -53,7 +55,7 @@ Se puede instalar escribiendo:
     yarn add --dev serve
 
 
-Con el comando `serve` creo un servidor web que sirve el `index.html` de mi web-app en el puerto `5000`.
+Con el comando `serve` se crea un servidor web que sirve el `index.html` de mi web-app en el puerto `5000`.
 
 ```
 
@@ -89,7 +91,7 @@ Para instalar nightwatch basta con escribir
     yarn add --dev nightwatch
 ```
 
-También voy a crear un archivo de configuración (nightwatch.conf.js) y un archivo con un test (test.js).
+Para ejecutar nightwatch hace falta un archivo de configuración `nightwatch.conf.js`:
 
 ```javascript
 // nightwatch.conf.js
@@ -106,6 +108,7 @@ module.exports = {
 };
 ```
 
+ y una carpeta donde se encuentran los tests, en este caso solamente hay un test `test/basic.js`:
 
 ```javascript
 // test/basic.js
@@ -124,10 +127,11 @@ module.exports = {
     browser.end();
   },
 };
-
 ```
 
-Para ejecutar las pruebas en local, hace falta tener un servidor de selenium corriendo junto con un [Browser Driver](http://nightwatchjs.org/gettingstarted#browser-drivers-setup).
+Este test navega a la url donde se esta siriviendo la webapp, espera a que el contenido se cargue y comprueba que el `h1`esta presente con el tenxto `Hello WORLD`.
+
+Para ejecutar las pruebas en local hace falta tener un servidor de selenium corriendo junto con un [Browser Driver](http://nightwatchjs.org/gettingstarted#browser-drivers-setup).
 
 En mac se puede instalar selenium mediante:
 
@@ -138,12 +142,12 @@ Y el driver de chrome:
     brew install chromedriver
 
 
-Con esto instalado podemos ejecutar los tests, para ello en una pestaña del terminal ejecutamos el servidor de selenium
+Para ejecutar selenium basta con escribir:
 
     selenium-server
 
 
-Y con esto ya podemos ejecutar `nightwatch`, que controlará nuestro chrome y ejecutará los tests de forma automática.
+Y con esto ya podemos ejecutar `nightwatch`, que controlará nuestro navegador a traves del browser driver que tengamos instalado y ejecutará los tests de forma automática.
 
 ```bash
 MacBook-Pro-de-CARTO:e2e-travis-saucelabs iago$ $(npm bin)/nightwatch
@@ -159,16 +163,17 @@ Running:  basicTest
 OK. 3 assertions passed. (1.363s)
 ```
 
+Como era de esperar los tests pasan.
+
 ## Sauce Labs
 
-Sauce labs es una herramienta gratis para open source que nos permite ejecutar pruebas de selenium contra diferentes plataformas de forma moderadamente sencilla.
+Sauce labs es una herramienta gratis para proyectos open source que nos permite ejecutar pruebas de `selenium` contra diferentes plataformas de forma moderadamente sencilla.
 
 
 
 ### Configurando usuario y contraseña
 
-Para utilizar `sauce-labs` tendremos que crearnos una cuenta, y editar nuestro archivo de configuración de nightwatch añadiendo
-el puerto, el host y nuestro usuario y api-key.
+Para utilizar `sauce-labs` tendremos que crearnos una cuenta y obtener nuestro nombre de usuario y access-key. Una vez las tengamos tendremos que editar nuestro archivo de configuración de nightwatch añadiendo el puerto, el host y nuestro usuario y access-key.
 
 Para **NO subir claves secretas a github** guardo mis variables de entorno en un archivo `.env` y las cargo mediante `dotenv` 
 
@@ -202,7 +207,7 @@ sauce con nuestra web-app, para ello utilizaremos [sauce connect](https://wiki.s
 Si se ha ejecutado correctamente veremos que hay un tunel activo en el dashboard de `sauce`.
 
 
-<img src="https://iagolast.files.wordpress.com/2017/10/screen-shot-2017-10-29-at-22-34-43.png"/>
+<img height="300px" src="https://iagolast.files.wordpress.com/2017/10/screen-shot-2017-10-29-at-22-34-43.png"/>
 
 Si ejecutamos de nuevo `nightwatch` este se ejecutará contra los servidores de sauce.
 
@@ -227,11 +232,11 @@ OK. 3 assertions passed. (6.88s)
 ## Configurando diferentes navegadores
 
 La gracia de todo esto es que con unos pequeños cambios en el archivo de configuracion de nightwatch, podemos
-ejecutar nuestras pruebas contra diferentes navegadores.
+ejecutar nuestras pruebas contra diferentes navegadores, en este caso:
 
-    - Firefox55
-    - Internet explorer 11
-    - MS Edge 15
+- Firefox55
+- Internet explorer 11
+- MS Edge 15
 
 ```javascript
 require('dotenv').config(); // Carga la informacion secreta.
@@ -274,7 +279,6 @@ module.exports = {
 Para ejecutar las pruebas, debemos pasarle el nombre de los entornos al parametro `env` de nightwatch
 
 ```bash
-
 $(npm bin)/nightwatch --env default,ie11,edge15,firefox55
 Started child process for: default environment 
 Started child process for: ie11 environment 
@@ -339,11 +343,11 @@ Started child process for: firefox55 environment
  firefox55   
 
 ```
-En menos de 12 segundos, hemos probado nuestra app en 4 navegadores diferentes y internet explorer 10 ha fallado por que entre otras cosas no tiene soporte para los string literals que utilizamos en nuestra web-app.
+En menos de 12 segundos, hemos probado nuestra app en 4 navegadores diferentes y **internet explorer 10 ha fallado** por que entre otras cosas no tiene soporte para los string literals que utilizamos en nuestra web-app.
 
 ## Notificando a sauce el resultado
 
-En el dashboard de sauce labs, podemos ver nuestros tests en los 4 navegadores, sin embargo no tenemos ningun tipo de feedback acerca de su han sido exitosos o no.
+En el dashboard de sauce labs podemos ver nuestros tests en los 4 navegadores sin embargo no tenemos ningun tipo de feedback acerca de su han sido exitosos o no.
 
 <img src="https://iagolast.files.wordpress.com/2017/10/screen-shot-2017-10-29-at-22-50-41.png"/>
 
@@ -589,6 +593,7 @@ Started child process for: firefox55 environment
 ```
 Y tal y como esperabamos, la web app funciona perfectamente en los 4 navegadores.
 
+<img src="https://iagolast.files.wordpress.com/2017/10/screen-shot-2017-10-30-at-20-57-51.png"/>
 
 ## Resumen
 
@@ -599,7 +604,7 @@ Ese entorno se puede configurar junto a travis para probar de forma automática 
 
 ## Referencias
 
-- [https://saucelabs.com/] (https://saucelabs.com/)
+- [https://saucelabs.com/](https://saucelabs.com/)
 - [http://nightwatchjs.org/](http://nightwatchjs.org/)
 - [https://docs.travis-ci.com/user/sauce-connect/](https://docs.travis-ci.com/user/sauce-connect/)
 - [https://medium.com/@mikaelberg/zero-to-hero-with-end-to-end-tests-using-nightwatch-saucelabs-and-travis-e932c8deb695](https://medium.com/@mikaelberg/zero-to-hero-with-end-to-end-tests-using-nightwatch-saucelabs-and-travis-e932c8deb695)

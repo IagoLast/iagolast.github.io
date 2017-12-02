@@ -8,7 +8,7 @@ categories: blog
 <img src="https://exclaim.ca//images/mumuHomer.jpg" alt="Trabajar en remoto" style="display:block; margin:30px auto;">
 
 # Sobre trabajar en remoto.
-Esta mañana he leido [un artículo de Alberto Romeu](http://albertoromeu.com/trabajar-en-remoto/) explicando las razones por las que decidió trabajar en remoto y he sentido la necesidad de escribir sobre el tema quizá algún día profundice sobre el tema pero de momento voy a escribir lo básico que se me viene a la cabeza.
+Esta mañana he leído [un artículo de Alberto Romeu](http://albertoromeu.com/trabajar-en-remoto/) explicando las razones por las que decidió trabajar en remoto y he sentido la necesidad de escribir sobre el tema quizá algún día profundice sobre el tema pero de momento voy a escribir lo básico que se me viene a la cabeza.
 
 
 
@@ -20,7 +20,7 @@ hacienda para entregar unos papeles cuando podrías rellenar un formulario web?
 
 Recuerdo una asignatura en la que el profesor estuvo ausente una semana y decidió dejarnos las clases subidas a youtube, en ese momento ví la luz.
 
-Tener las clases grabadas era el futuro: sí no me encontraba al 100% pausaba el video para retomarlo más adelante con más con ganas. Sí algo era demasiado básico podía saltármelo. Sí no entendía algo podía verlo otra vez y en el peor caso siempre podía mandar un email con dudas.
+Tener las clases grabadas era el futuro: si no me encontraba al 100% pausaba el video para retomarlo más adelante con más con ganas. Si algo era demasiado básico podía saltármelo. Si no entendía algo podía verlo otra vez y en el peor caso siempre podía mandar un email con dudas.
 
 Para colmo de lo absurdo  ese profesor daba exactamente la misma clase 4 veces al día a 4 grupos diferentes! Más de 300 personas contaminando para hacer algo que podrían hacer en su casa. Y no debí de ser el único en ver las ventajas de la educación a distancia, ese año nació Coursera.
 
@@ -28,7 +28,7 @@ Al poco tiempo encontré mi primer trabajo en una startup que por suerte estaba 
  Me había convertido en el dueño absoluto de mi tiempo y podía decidir si madrugar para estudiar, si centrarme en adelantar trabajo o si irme de fiesta hasta que cerrase el [playa](http://playaclub.club) y perder un día entero convalenciente en cama.
 
 ## A nadie le gusta conducir (al trabajo).
-El primer problema que le veo al trabajo presencial independientemente de estar calentando la silla es el desplazamiento. No voy a hablar del riesgo que supone ir desde Pontevedra a Porriño con niebla por [uno de los tramos más peligrosos de España](http://www.farodevigo.es/gran-vigo/2017/10/14/curvas-55-extienden-leyenda-negra/1766966.html), ni de cuanto he contaminado en el proceso, voy a centrarme simplemente en el **tiempo** que pedería.
+El primer problema que le veo al trabajo presencial independientemente de estar calentando la silla es el desplazamiento. No voy a hablar del riesgo que supone ir desde Pontevedra a Porriño con niebla por [uno de los tramos más peligrosos de España](http://www.farodevigo.es/gran-vigo/2017/10/14/curvas-55-extienden-leyenda-negra/1766966.html), ni de cuanto he contaminado en el proceso, voy a centrarme simplemente en el **tiempo** que perdería.
 
 45 minutos ida y 45 minutos vuelta, a diario, 5 dias a la semana. Hora y media diarias en el coche!
 
@@ -39,11 +39,11 @@ Yo tardo 30 segundos en ponerme la bata e ir al despacho y es algo que agradezco
 También puedo preparar la comida con calma y a veces hasta como mientras trabajo ¿por qué no? a nadie le importa!
 
 ## Me puedo permitir elegir.
-Por puro azar tengo la gran suerte de pertenecer a un sector privilegiado cómo es el de la informática y cómo parte de esos privilegios puedo permitirme elegir la empresa para la que trabajo.
+Por puro azar tengo la gran suerte de pertenecer a un sector privilegiado como es el de la informática y como parte de esos privilegios puedo permitirme elegir la empresa para la que trabajo.
 
 Desde mi humilde punto de vista la consultoría de software es habitualmente una especie de restaurante de `comída rápida` donde prima el tiempo y el coste por encima de la calidad. Al igual que Alberto siempre he buscado una empresa de producto propio donde poder elaborar platos de autor con cariño y mimo.
 
-También busco una empresa comprometida con el software libre o al menos que no tenga alergia al open source. Cómo tantos otros me siento en deuda permanente con la comunidad que me ha dado tanto sin pedir nada a cambio y lo mínimo que puedo pedir es que mi empresa ayude a mantener viva esa comunidad, ya sea a través de charlas y eventos o de repositorios públicos.
+También busco una empresa comprometida con el software libre o al menos que no tenga alergia al open source. Como tantos otros me siento en deuda permanente con la comunidad que me ha dado tanto sin pedir nada a cambio y lo mínimo que puedo pedir es que mi empresa ayude a mantener viva esa comunidad, ya sea a través de charlas y eventos o de repositorios públicos.
 
 Incluso asumiendo que no me importe conducir 1h diaria es muy complicado encontrar una empresa así en Galicia [(aunque hay excepciones)](www.igalia.com). Entonces ¿qué hago?
 

@@ -8,7 +8,7 @@ categories: blog
 <img src="https://exclaim.ca//images/mumuHomer.jpg" alt="Trabajar en remoto" style="display:block; margin:30px auto;">
 
 # Sobre trabajar en remoto.
-Esta mañana he leído [un artículo de Alberto Romeu](http://albertoromeu.com/trabajar-en-remoto/) explicando las razones por las que decidió trabajar en remoto y he sentido la necesidad de escribir sobre el tema quizá algún día profundice sobre el tema pero de momento voy a escribir lo básico que se me viene a la cabeza.
+Esta mañana he leído [un artículo de Alberto Romeu](http://albertoromeu.com/trabajar-en-remoto/) explicando las razones por las que decidió trabajar en remoto y he sentido la necesidad de escribir sobre el tema.
 
 
 

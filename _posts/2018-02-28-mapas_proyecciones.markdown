@@ -3,8 +3,7 @@ layout: post
 title:  "Mapas y proyecciones: Webmercator en javascript"
 date:   2018-02-28 09:00:00 +0100
 categories: blog
-description: "Fooo bar boom"
-image: "https://gist.githubusercontent.com/IagoLast/d6575a79fa279f450947244bba81f098/raw/45fec9fe91c3535e99c60ae8dc460d4e850ba917/map.png"
+image: "https://raw.githubusercontent.com/IagoLast/iagolast.github.io/master/static/2018_2_28.png"
 ---
 
 <a href="https://bl.ocks.org/iagolast/d6575a79fa279f450947244bba81f098" target="_blank">

@@ -14,7 +14,7 @@ categories: blog
 
 
 
-Una de las principales ventajas de dar una charla es que te obliga a documentarte y a aprender cosas sobre el tema. Preparando una charla sobre mapas y javascript y tras leer un poquito sobre proyecciones geográficas no me he podido resistir a intentar pintar un mapa desde cero y escribir sobre ello.
+Una de las principales ventajas de dar una charla es que te obliga a documentarte y a aprender cosas sobre el tema. Preparando una charla sobre mapas y javascript y tras leer un poquito sobre proyecciones geográficas no me he podido resistir a <a href="https://bl.ocks.org/iagolast/d6575a79fa279f450947244bba81f098" target="_blank"> intentar pintar un mapa desde cero </a> y escribir sobre ello.
 
 ## Proyecciones
 

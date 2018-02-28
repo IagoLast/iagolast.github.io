@@ -16,11 +16,11 @@ categories: blog
 
 Una de las principales ventajas de dar una charla es que te obliga a documentarte y a aprender cosas sobre el tema. Preparando una charla sobre mapas y javascript y tras leer un poquito sobre proyecciones geográficas no me he podido resistir a intentar pintar un mapa desde cero y escribir sobre ello.
 
-## Proyecciónes
+## Proyecciones
 
 Según la [wikipedia](https://es.wikipedia.org/wiki/Proyecci%C3%B3n_(matem%C3%A1ticas)) una proyección es un [mapeo](https://es.wikipedia.org/wiki/Funci%C3%B3n_matem%C3%A1tica) [idempotente](https://es.wikipedia.org/wiki/Idempotencia). Dicho en castellano, es una función que nos sirve para transformar puntos de una esfera (la tierra) en puntos de un plano cartesiano (un mapa!).
 
-Unas proyecciónes muy sencillas de entender son las [proyecciónes cilíndricas](https://es.wikipedia.org/wiki/Proyecci%C3%B3n_cil%C3%ADndrica_equivalente) como por ejemplo la proyección cilíndrica equivalente.
+Unas proyecciones muy sencillas de entender son las [proyecciones cilíndricas](https://es.wikipedia.org/wiki/Proyecci%C3%B3n_cil%C3%ADndrica_equivalente) como por ejemplo la proyección cilíndrica equivalente.
 
 <img src="http://mathworld.wolfram.com/images/eps-gif/CylindricalProjection3D_700.gif" alt="trigonometria de proyecciones" style="display:block; margin:30px auto;">
 

@@ -52,7 +52,7 @@ El problema de esta proyección es que distorsiona bastante las formas de los pa
 
 ## Mercator 
 
-Esto de los ángulos puede parecer una tontería pero en el siglo XXVI hacía muy complicado para los navegantes seguir los rumbos de los mapas, por ello en 1569 [Gerardus Mercator](https://es.wikipedia.org/wiki/Gerardus_Mercator) ideo una proyección que conservaba los ángulos de la esfera en el plano.
+Esto de los ángulos puede parecer una tontería pero en el siglo XVI hacía muy complicado para los navegantes seguir los rumbos de los mapas, por ello en 1569 [Gerardus Mercator](https://es.wikipedia.org/wiki/Gerardus_Mercator) ideo una proyección que conservaba los ángulos de la esfera en el plano.
 
 Mercator es un tipo de [proyección cilíndrica](https://es.wikipedia.org/wiki/Proyecci%C3%B3n_cartogr%C3%A1fica#Proyecci%C3%B3n_cil%C3%ADndrica) y hoy en día es la más utilizada en mapas web. A continuación vamos a explicar como calcular las coordenadas $$(x, y)$$ de la pantalla a partir de una latitud y una longitud.
 

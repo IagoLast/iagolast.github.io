@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "Mapas y proyecciones: Webmercator en javascript"
+title:  "Webmercator y javascript"
 date:   2018-02-28 09:00:00 +0100
 categories: blog
+description: "Implementando y entendiendo la proyección de mercator en javascript."
 image: "https://raw.githubusercontent.com/IagoLast/iagolast.github.io/master/static/2018_2_28.png"
 ---
 

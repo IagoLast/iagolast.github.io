@@ -8,10 +8,13 @@ image: "https://raw.githubusercontent.com/IagoLast/iagolast.github.io/master/sta
 ---
 
 <a href="https://bl.ocks.org/iagolast/d6575a79fa279f450947244bba81f098" target="_blank">
-    <img 
+    <amp-img 
         src="https://gist.githubusercontent.com/IagoLast/d6575a79fa279f450947244bba81f098/raw/45fec9fe91c3535e99c60ae8dc460d4e850ba917/map.png" 
         alt="Ejemplo de mapa dibujado en javascript" 
-        style="max-height:400px; display:block; margin:30px auto;">
+        style="display:block; margin:30px auto;"
+        width="572"
+        height="400">
+    </amp-img>
 </a>
 
 
@@ -24,7 +27,13 @@ Según la [wikipedia](https://es.wikipedia.org/wiki/Proyecci%C3%B3n_(matem%C3%A1
 
 Unas proyecciones muy sencillas de entender son las [proyecciones cilíndricas](https://es.wikipedia.org/wiki/Proyecci%C3%B3n_cil%C3%ADndrica_equivalente) como por ejemplo la proyección cilíndrica equivalente.
 
-<img src="http://mathworld.wolfram.com/images/eps-gif/CylindricalProjection3D_700.gif" alt="trigonometria de proyecciones" style="display:block; margin:30px auto;">
+
+<amp-img src="http://mathworld.wolfram.com/images/eps-gif/CylindricalProjection3D_700.gif"
+    alt="trigonometria de proyecciones"
+    style="display:block; margin:30px auto;"
+    width="452"
+    height="186">
+</amp-img>
 
 
 En esta proyección tenemos que imaginar que rodeamos la esfera que queremos proyectar con un folio gigante, la anchura de ese folio es igual al diámetro de la esfera en el ecuador ($$2 \cdot \pi \cdot r$$) y la altura del folio será $$2 \cdot r$$.

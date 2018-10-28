@@ -1,0 +1,31 @@
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "author": {
+      "@type": "Person", 
+      "name": "{{ site.default_author }}"
+    },
+    "publisher": {
+      "@type": "Organization", 
+      "name": "{{ site.default_author }}",
+      "logo": {
+        "@type": "ImageObject",
+        "height": {
+          "@type": "QuantitativeValue",
+          "value": {{ site.logo_h }}
+        },
+        "width": {
+          "@type": "QuantitativeValue",
+          "value": {{ site.logo_w }}
+        },
+        "url": "{{ site.logo_url }}"
+      }
+    },
+    "datePublished" : "{{ page.date | date: "%b %-d, %Y" }}",
+    "dateModified" : "{{ page.date | date: "%b %-d, %Y" }}",
+    "headline" : "{{ page.title }}",
+    "image" : "{{ page.image }} ",
+    "mainEntityOfPage" : "{{ site.url }}{{ page.url }}"
+  }
+</script>

@@ -3,6 +3,7 @@ layout: post
 title:  "Campos de Galois"
 date:   2016-11-06 14:42:29 +0100
 categories: blog
+math: true
 ---
 
 Una explicación más detallada (en inglés) puede encontrar en [este video](https://www.youtube.com/watch?v=x1v2tX4_dkQ) sobre el que se basa este texto.

@@ -3,11 +3,12 @@ layout: post
 title:  "Trabajo remoto"
 date:   2017-12-02 12:00:00 +0100
 categories: blog
+author: iagolast
 ---
 
-<img src="https://exclaim.ca//images/mumuHomer.jpg" alt="Trabajar en remoto" style="display:block; margin:30px auto;">
+<amp-img layout="responsive" src="https://exclaim.ca//images/mumuHomer.jpg" width="714" height="541" alt="Trabajar en remoto"></amp-img>
 
-# Sobre trabajar en remoto.
+## Sobre trabajar en remoto.
 Esta mañana he leído [un artículo de Alberto Romeu](http://albertoromeu.com/trabajar-en-remoto/) explicando las razones por las que decidió trabajar en remoto y he sentido la necesidad de escribir sobre el tema.
 
 

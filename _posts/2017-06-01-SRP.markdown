@@ -25,7 +25,7 @@ Vamos a poner como ejemplo un portero de un bar cuya única función es comproba
 
 En un principio el requisito dice: `sólo pueden entrar los mayores de edad.` Como resultado tenemos una función que sólo hace una cosa, y es fácil de probar y de leer.
 
-```
+```js
 puedePasar(persona){
    if (persona.edad <= 18){
 	return false;
@@ -36,7 +36,7 @@ puedePasar(persona){
 
 Días mas tarde, el jefe de la discoteca decide prohibir entrar con chanclas a la gente independientemente de su edad. La mayoría de los programadores traducirán este cambio inmediatamente:
 
-```
+```js
 puedePasar(persona){
    if(persona.calzado === 'zapatillas'){
      return false;
@@ -52,7 +52,7 @@ De nuevo esto no está necesariamente mal, pero esta función ha pasado de hacer
 
 Aquí es cuando si aplicamos los principios de la buena programación, reescribimos el código aplicando el SRP de forma que cada función haga una sola `cosa`.
 
-```
+```js
 puedePasar(persona){
    return comprobarEdad(persona) && comprobarCalzado(persona);
 }
@@ -76,7 +76,7 @@ Con el tiempo la discoteca crece y el dueño decide abrir una zona informal dond
 
 Si no hubiésemos aplicado los principios, probablemente quede algo asi:
 
-```
+```js
 puedePasar(persona, zona){
   if(zona === 'informal')
    return persona.edad >= 18;
@@ -87,7 +87,7 @@ puedePasar(persona, zona){
 ```
 El primer problema que surge es que tenemos código duplicado,  la comparación de la edad esta presente dos veces. Si quisiésemos migrar nuestro sistema a USA, donde la mayoría de edad son 21 años habrá que cambiar el código en dos sitios.
 
-```
+```js
 puedePasar(persona, zona){
   if(zona === 'informal')
     return comprobarEdad(persona);

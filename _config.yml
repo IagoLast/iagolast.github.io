@@ -5,10 +5,14 @@ baseurl: ""
 url: https://iagolast.github.io 
 twitter_username: iagolast
 github_username:  iagolast
+default_author: Iago Lastra
+logo_url: https://pbs.twimg.com/profile_images/431818299291099136/Iia0gR8i_200x200.png
+logo_w: 200
+logo_h: 200
 
 # Build settings
 markdown: kramdown
-theme: minima
+# theme: minima
 gems:
   - jekyll-feed
 exclude:

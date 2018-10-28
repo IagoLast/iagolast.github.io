@@ -1,22 +1,18 @@
----
-layout: default
----
+<!doctype html>
+<html amp lang="es">
 
-<div class="home">
+{% include _head/head.html %}
 
-  {{ content }}
+<body>
+  {% include _header/_header.html %}
+  <main class="main" aria-label="Content">
+    <div class="wrapper blog">
+      {% include _post-list.html %}  
+    </div>
+  </main>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+  {% include footer.html %}
 
-        <h2>
-          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+</body>
 
-
-</div>
+</html>

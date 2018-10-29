@@ -1,20 +1,17 @@
-<!DOCTYPE html>
-<html lang="es">
+<!doctype html>
+<html amp lang="es">
 
-  {% include head.html %}
+{% include _head/head.html %}
 
-  <body>
+<body>
+  {% include _header/_header.html %}
+  <main class="main" aria-label="Content">
+    <div class="wrapper">
+      {{ content }}
+    </div>
+  </main>
 
-    {% include header.html %}
-
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </main>
-
-    {% include footer.html %}
-
-  </body>
+  {% include footer.html %}
+</body>
 
 </html>

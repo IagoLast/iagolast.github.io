@@ -76,7 +76,7 @@ Con el comando `serve` se crea un servidor web que sirve el `index.html` de mi w
 
 Efectivamente, abriendo chrome en `http://localhost:5000` puedo ver mi aplicación funcionando correctamente
 
-<img src="https://iagolast.files.wordpress.com/2017/10/screen-shot-2017-10-29-at-21-54-31.png"/>
+<amp-img layout="responsive" width="500" height="341" src="https://iagolast.files.wordpress.com/2017/10/screen-shot-2017-10-29-at-21-54-31.png"></amp-img>
 
 
 
@@ -207,7 +207,7 @@ sauce con nuestra web-app, para ello utilizaremos [sauce connect](https://wiki.s
 Si se ha ejecutado correctamente veremos que hay un tunel activo en el dashboard de `sauce`.
 
 
-<img height="300px" src="https://iagolast.files.wordpress.com/2017/10/screen-shot-2017-10-29-at-22-34-43.png"/>
+<amp-img layout="responsive" width="250px" height="277px" src="https://iagolast.files.wordpress.com/2017/10/screen-shot-2017-10-29-at-22-34-43.png"></amp-img>
 
 Si ejecutamos de nuevo `nightwatch` este se ejecutará contra los servidores de sauce.
 
@@ -349,7 +349,7 @@ En menos de 12 segundos, hemos probado nuestra app en 4 navegadores diferentes y
 
 En el dashboard de sauce labs podemos ver nuestros tests en los 4 navegadores sin embargo no tenemos ningun tipo de feedback acerca de su han sido exitosos o no.
 
-<img src="https://iagolast.files.wordpress.com/2017/10/screen-shot-2017-10-29-at-22-50-41.png"/>
+<amp-img layout="responsive" width="500" height="192" src="https://iagolast.files.wordpress.com/2017/10/screen-shot-2017-10-29-at-22-50-41.png"></amp-img>
 
 
 Se puede utilizar la [REST API](https://wiki.saucelabs.com/display/DOCS/Job+Methods) de saucelabs para actualizar la información de los jobs (tests) desde nightwatch. Para ello vamos a crear un pequeño snippet llamado `sauce-feedback.js`
@@ -406,7 +406,7 @@ module.exports = {
 
 Si vemos ahora el dashboard despues de ejecutar los tests, observamos los ticks verdes. (Por algun motivo que desconozco IE se muestra como completado en lugar de "error", pero algo es algo! )
 
-<img src="https://iagolast.files.wordpress.com/2017/10/screen-shot-2017-10-29-at-22-58-23.png"/>
+<amp-img layout="responsive" width="500" height="142" src="https://iagolast.files.wordpress.com/2017/10/screen-shot-2017-10-29-at-22-58-23.png"></amp-img>
 
 
 ## Integración con Travis.
@@ -489,7 +489,7 @@ module.exports = {
 
 Con esto travis probara automaticamente cada commit o PR de la rama maste
 
-<img src="https://iagolast.files.wordpress.com/2017/10/screen-shot-2017-10-29-at-23-20-07.png"/>
+<amp-img layout="responsive" width="499" height="32" src="https://iagolast.files.wordpress.com/2017/10/screen-shot-2017-10-29-at-23-20-07.png"></amp-img>
 
 En este caso nos avisa de que los tests están fallando en IE10 por lo que voy a reescribir la webapp para que funcione en todos los navegadores.
 
@@ -593,7 +593,7 @@ Started child process for: firefox55 environment
 ```
 Y tal y como esperabamos, la web app funciona perfectamente en los 4 navegadores.
 
-<img src="https://iagolast.files.wordpress.com/2017/10/screen-shot-2017-10-30-at-20-57-51.png"/>
+<amp-img layout="responsive" width="500" height="350" src="https://iagolast.files.wordpress.com/2017/10/screen-shot-2017-10-30-at-20-57-51.png"></amp-img>
 
 ## Resumen
 

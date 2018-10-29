@@ -1,0 +1,12 @@
+<header class="header">
+  <div class="wrapper">
+    <a class="header__title" href="{{ "/" | relative_url}}">{{ site.title | escape }}</a>
+    <nav class="header__nav">
+      {% for page in site.pages %}
+        {% if page.title %}
+        <a href="{{ page.url | relative_url }}">{{ page.title | escape }}</a>
+        {% endif %}
+      {% endfor %}
+    </nav>
+  </div>
+</header>

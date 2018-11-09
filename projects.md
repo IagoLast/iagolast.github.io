@@ -10,13 +10,16 @@ title: Projects
 GPU implementation of a high performance feature selection algorithm.
 
 # Projects
+### [Squire](https://iagolast.github.io/squire-core/)
+Javascript library to generate svg badges.
+
 ### [Horarios Renfe](https://iagolast.github.io/renfehorarios)
 Simple PWA to see train timetables.
 
 ### [Horarios Monbus](https://iagolast.github.io/monbus)
 Same for local buses.
 
-### [Weather app](https://weather-app-e1234.firebaseapp.com)
+### [Trebo](https://play.google.com/store/apps/details?id=com.matchandgo.trebo)
 Funny Galician weather forecast.
 
 ### [Instranslator](https://flashlight.nateparrott.com/plugin/Instranslator)

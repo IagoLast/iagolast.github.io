@@ -5,6 +5,7 @@ date:   2018-02-28 09:00:00 +0100
 categories: blog
 description: "Implementando y entendiendo la proyección de mercator en javascript."
 image: "https://raw.githubusercontent.com/IagoLast/iagolast.github.io/master/static/2018_2_28.png"
+math: true
 ---
 
 <a href="https://bl.ocks.org/iagolast/d6575a79fa279f450947244bba81f098" target="_blank">

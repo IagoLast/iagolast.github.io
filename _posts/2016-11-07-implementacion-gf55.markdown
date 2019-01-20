@@ -3,7 +3,7 @@ layout: post
 title:  "Implementacion de GF(256)"
 date:   2016-11-07 16:00:00 +0100
 categories: blog
-math: true
+math_deprecated: true
 ---
 
 Este artículo trata sobre la implementación en javascript de un campo de Galois $$GF(256)$$, si tienes dudas sobre cómo funcionan los campos de Galois te recomiendo que empieces por [aquí]({% post_url 2016-11-06-campos-galois %}).

@@ -17,8 +17,11 @@
     {% include main.css %}
     {% include syntax.css %}    
   </style>
-  {% if page.math %}
+  {% if page.math_deprecated %}
     <script async defer type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"></script>
   {% endif %}
-  <script async custom-element="amp-mathml" src="https://cdn.ampproject.org/v0/amp-mathml-0.1.js"></script>
+  {% if page.math %}
+    <script async custom-element="amp-mathml" src="https://cdn.ampproject.org/v0/amp-mathml-0.1.js"></script>
+  {% endif %}
+
 </head>

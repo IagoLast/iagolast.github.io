@@ -4,6 +4,7 @@ title:  "Trabajo remoto"
 date:   2017-12-02 12:00:00 +0100
 categories: blog
 author: iagolast
+image: "https://exclaim.ca//images/mumuHomer.jpg"
 ---
 
 <amp-img layout="responsive" src="https://exclaim.ca//images/mumuHomer.jpg" width="714" height="541" alt="Trabajar en remoto"></amp-img>

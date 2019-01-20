@@ -25,7 +25,11 @@
     "datePublished" : "{{ page.date | date: "%b %-d, %Y" }}",
     "dateModified" : "{{ page.date | date: "%b %-d, %Y" }}",
     "headline" : "{{ page.title }}",
-    "image" : "{{ page.image }} ",
+    {% if page.image %}
+      "image" : "{{ page.image }} ",
+    {% else %}
+      "image" : "{{ site.logo_url }} ",
+    {% endif %}
     "mainEntityOfPage" : "{{ site.url }}{{ page.url }}"
   }
 </script>

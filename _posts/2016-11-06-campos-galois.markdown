@@ -74,9 +74,9 @@ Hasta aquí todo es bastante simple, pero ¿Qué pasa cuando <amp-mathml inline 
 
 ## Extension fields
 
-Llamaremos extension field a un cuerpo finito donde el número de elementos es una potencia de un número primo y los elementos del conjunto son polinómios.
+Llamaremos extension field a un cuerpo finito donde el número de elementos es una potencia de un número primo y los elementos del conjunto son polinómios de la forma:
 
-<amp-mathml layout="container" data-formula="$$ a_{m-1} X^{m-1} + ... + a_0 X + a_0 $$"></amp-mathml>
+<amp-mathml layout="container" data-formula="$$ a_{m-1} x^{m-1} + ... + a_0 x + a_0 $$"></amp-mathml>
 
 
 Donde <amp-mathml inline layout="container" data-formula="$$ a_i \in GF(p^m) \;\;\;\; $$"></amp-mathml>  

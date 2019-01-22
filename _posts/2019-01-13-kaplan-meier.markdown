@@ -4,6 +4,7 @@ title:  "Análisis de supervivencia: Curvas de Kaplan Meier con R"
 date:   2019-01-13 14:00:00 +0100
 categories: blog
 math: true
+description: "Explicación y ejemplos de como implementar curvas de Kaplan Meier en R para el análisis de supervivencia."
 image: "https://starecat.com/content/wp-content/uploads/graph-happiness-intelligence-the-simpsons-lisa.jpg"
 ---
 

@@ -31,7 +31,7 @@ p,
 li {
   font-weight: 300;
   color: #222;
-  text-align: justify;
+  /* text-align: justify; */
 }
 
 h1 {
@@ -144,5 +144,9 @@ time {
   amp-img {
     max-width: 500px;
     margin: 30px auto;
+  }
+
+  amp-img.xl {
+    max-width: initial;
   }
 }

@@ -8,14 +8,14 @@
     {% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}
   </title>
   <meta name="description" content="{{ page.description | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
-  {% include twitter-card.html %}
-  {% include amp-boilerplate.html %}
+  {% include /head/twitter-card.html %}
+  {% include /head/amp-boilerplate.html %}
   {% if jekyll.environment == 'production' %}
-    {% include google-analytics.html %}
+    {% include /head/google-analytics.html %}
   {% endif %}
   <style amp-custom>
-    {% include main.css %}
-    {% include syntax.css %}    
+    {% include /style/main.css %}
+    {% include /style/syntax.css %}    
   </style>
   {% if page.math_deprecated %}
     <script async defer type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"></script>

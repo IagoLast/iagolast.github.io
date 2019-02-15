@@ -10,6 +10,7 @@ logo_url: https://pbs.twimg.com/profile_images/431818299291099136/Iia0gR8i_200x2
 logo_w: 200
 logo_h: 200
 ga_account: UA-42054532-4
+description: "IagoLast's personal site"
 
 # Build settings
 markdown: kramdown

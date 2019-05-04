@@ -31,7 +31,6 @@ p,
 li {
   font-weight: 300;
   color: #222;
-  /* text-align: justify; */
 }
 
 h1 {
@@ -40,7 +39,7 @@ h1 {
 
 h2 {
   font-size: 1.5em;
-  margin-top: 2.2em;
+  margin-top: 2.3em;
   font-weight: 500;
 }
 
@@ -69,10 +68,11 @@ li {
 
 p {
   margin-left: 2px;
+  text-align: justify;
 }
 
 .wrapper {
-  max-width: 920px;
+  max-width: 980px;
   margin: auto;
   padding: 0 30px;
 }
@@ -119,8 +119,8 @@ time {
 /* Site Main */
 
 .main {
-  min-height: calc(100vh - 145px);
   font-size: 1.2em;
+  padding: 30px 0;
 }
 
 /* Footer */
@@ -129,7 +129,6 @@ time {
   height: 40px;
   line-height: 40px;
   text-align: center;
-  margin-top: 32px;
 }
 
 

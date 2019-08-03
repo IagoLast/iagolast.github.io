@@ -4,10 +4,10 @@ title:  "10 Libros recomendados para ser mejor programador"
 date:   2019-05-02 14:00:00 +0100
 categories: blog
 description: "Una lista con los 10 mejores libros para convertirse en un buen programador."
-image: "https://pbs.twimg.com/media/Bk6oTUVCIAAxUbj.jpg"
+image: "/static/posts/books.jpg"
 ---
 
-<amp-img layout="responsive" src="https://pbs.twimg.com/media/Bk6oTUVCIAAxUbj.jpg" width="458" height="516" alt="Imagen de los Simpsons con una gráfica"></amp-img>
+<amp-img layout="responsive" src="/static/posts/books.jpg" width="1280" height="720" alt="Libros en una estantería."></amp-img>
 
 
 ## [1. Clean Code: A Handbook of Agile Software Craftsmanship](https://amzn.to/2ViE2xX)

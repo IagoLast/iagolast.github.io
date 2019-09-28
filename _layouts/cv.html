@@ -1,0 +1,252 @@
+<!doctype html>
+<html amp lang="es">
+{% include /head/head.html %}
+<style>
+    .main {
+        padding: 8px;
+        padding-bottom: 4em;
+    }
+
+    .Item {
+        margin-top: 1em;
+        text-align: left;
+        text-justify: none;
+    }
+
+    .Item_title {
+        margin: 0;
+        font-weight: 100;
+        color: #2A2A2B;
+    }
+
+    .Item_content {
+        margin: .2em auto;
+        font-weight: 400;
+        color: #2A2A2B;
+    }
+
+    .Item_description {
+        margin: 0;
+        font-weight: 100;
+        font-size: .8em;
+        color: #4F4F4F;
+    }
+
+    .Item_link {
+        margin: 0;
+        font-weight: 100;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    @media (min-width: 800px) {
+        .row {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .row .Item .Item_title {
+            display: block;
+            margin-bottom: .3em;
+        }
+    }
+
+    @media print {
+        @page {
+            size: auto;
+            margin: 200mm;
+        }
+    }
+</style>
+
+<body>
+    <main class="main" aria-label="Content">
+        <div class="wrapper">
+            <h1> Iago Lastra Rodríguez</h1>
+
+            <section>
+                <p>
+                    Software engineer born in Pontevedra, Spain, working remotely from Barcelona at
+                    <a href="https://youcanbook.me/">YouCanBook.me</a>
+                </p>
+
+                <p>
+                    I love everything about software, technology and of course programming! I am very serious about
+                    writing
+                    clean code. I'm always trying to learn something new about algorithms, good practices, testing,
+                    design patterns or software architecture.
+                </p>
+
+
+                <p>
+                    Although I started my career as a machine learning & Algorithms researcher, I am currently working
+                    as a
+                    web developer and in my free time I study Bioinformatics.
+                </p>
+            </section>
+
+            <section>
+                <h2>Education</h2>
+                <div class="Item">
+                    <span class="Item_title">From September 2019 </span>
+                    <p class="Item_content">Bioinformatics and Biostatistics Master´s degree.</p>
+                    <a class="Item_link" href="uoc.edu">uoc.edu</a>
+                </div>
+
+                <div class="Item">
+                    <span class="Item_title">November 2015 - 2016</span>
+                    <p class="Item_content">Artificial intelligence Master´s degree</p>
+                    <a class="Item_link" href="www.uned.es">uned.es</a>
+                </div>
+
+                <div class="Item">
+                    <span class="Item_title">September 2010 - JULY 2015</span>
+                    <p class="Item_content">Computer science degree</p>
+                    <a class="Item_link" href="www.udc.es">udc.es</a>
+                </div>
+            </section>
+
+            <section>
+                <h2>Work Experience</h2>
+
+                <div class="Item">
+                    <span class="Item_title">From March 2019</span>
+                    <p class="Item_content">
+                        <a href="//carto.com">@YouCanBookMe</a> - Software engineer
+                    </p>
+                    <p class="Item_description">
+                        Worked on a React application.
+                    </p>
+                </div>
+
+                <div class="Item">
+                    <span class="Item_title">July 2017 - March 2019</span>
+                    <p class="Item_content">
+                        <a href="//carto.com">@CARTO</a> - Software engineer
+                    </p>
+                    <p class="Item_description">
+                        Worked on javascript map rendering javascript libraries and a full front-end framework.
+                    </p>
+                </div>
+
+                <div class="Item">
+                    <span class="Item_title">March 2015 - July 2017</span>
+                    <p class="Item_content">
+                        <a href="//quobis.com">@Quobis</a> - Software engineer
+                    </p>
+                    <p class="Item_description">
+                        Developed a video conference web-app and multiple javascript libraries to provide real-time
+                        communications using WebRTC technology.
+                    </p>
+                </div>
+
+                <div class="Item">
+                    <span class="Item_title">September 2010 - July 2015</span>
+                    <p class="Item_content">
+                        <a href="//eflox.net/">@Eflox</a> - Software engineer
+                    </p>
+                    <p class="Item_description">
+                        Worked on a car workshop search engine.
+                    </p>
+                </div>
+
+                <div class="Item">
+                    <span class="Item_title">September 2010 - July 2015</span>
+                    <p class="Item_content">
+                        <a href="//lidiagroup.org">@LidiaGroup</a> - Research Intern
+                    </p>
+                    <p class="Item_description">
+                        Implemented & designed a high performance feature selection algorithm for the European Spatial
+                        Agency <a href="http://sci.esa.int/gaia/">Gaia mission</a>.
+                    </p>
+                </div>
+
+                <div class="Item">
+                    <span class="Item_title">September 2010 - July 2015</span>
+                    <p class="Item_content">
+                        @Mobents Mobile Payments SL - Android developer
+                    </p>
+                    <p class="Item_description">Worked on a mobile payments app. Helped with the iPayQR Standard.</p>
+                </div>
+            </section>
+
+            <section>
+                <h2>Publications</h2>
+
+                <div class="Item">
+                    <span class="Item_title">
+                        Fast-mRMR: Fast Minimum Redundancy Maximum Relevance Algorithm for
+                        High-Dimensional Big Data
+                    </span>
+
+                    <p class="Item_description">
+                        <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/int.21833">
+                            https://onlinelibrary.wiley.com/doi/full/10.1002/int.21833
+                        </a>
+                    </p>
+                </div>
+            </section>
+
+            <section>
+                <h2>Courses</h2>
+
+                <div class="Item">
+                    <span class="Item_title">June 2016</span>
+                    <p class="Item_content">Algorithms: Design and Analysis Part I</p>
+                    <p class="Item_description">
+                        <a class="Item_link"
+                            href="https://www.coursera.org/learn/algorithm-design-analysis">coursera.org</a>
+                    </p>
+
+                </div>
+
+                <div class="Item">
+                    <span class="Item_title">December 2012</span>
+                    <p class="Item_content">MongoDB for developers.</p>
+                    <p class="Item_description">
+                        <a class="Item_link"
+                            href="https://s3.amazonaws.com/edu-cert.10gen.com/downloads/2adbec3d363a4217ba9092fb72545751/Certificate.pdf">mongodb.com</a>
+                    </p>
+                </div>
+            </section>
+
+            <section>
+                <h2>Main Areas</h2>
+
+                <div class="row">
+                    <div class="Item">
+                        <span class="Item_title">Web</span>
+                        <p class="Item_description"> Libraries & Testing. </p>
+                        <p class="Item_description"> Responsive design. </p>
+                        <p class="Item_description"> UX and UI. </p>
+                        <p class="Item_description"> Progressive web apps. </p>
+                        <p class="Item_description"> Page Speed. </p>
+                    </div>
+
+                    <div class="Item">
+                        <span class="Item_title">Machine learning.</span>
+                        <p class="Item_description"> Computer Vision. </p>
+                        <p class="Item_description"> Virtual Reality. </p>
+                        <p class="Item_description"> High performance GPU computing. </p>
+                        <p class="Item_description"> Feature selection Algorithms. </p>
+                        <p class="Item_description"> Big Data & Data mining. </p>
+                    </div>
+
+                    <div class="Item">
+                        <span class="Item_title">Software Engineering.</span>
+                        <p class="Item_description"> Clean Code. </p>
+                        <p class="Item_description"> Clean Architecture. </p>
+                        <p class="Item_description"> Testing. </p>
+                        <p class="Item_description"> Refactoring. </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+</body>
+
+</html>

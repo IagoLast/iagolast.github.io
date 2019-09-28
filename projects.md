@@ -7,6 +7,19 @@ title: Projects
 ---
 # Work experience
 
+## Reveal
+`2019` - CARTO
+
+
+<amp-img class="xl" src="/static/reveal.png" 
+  layout="responsive"
+  width="3360"
+  height="1824"
+  alt="Captura de pantalla de Reveal">
+</amp-img>
+
+Reveal is a demo application built using Airship and CARTO-VL.
+
 ## Airship
 `2018` - CARTO
 
@@ -17,6 +30,9 @@ title: Projects
   height="720"
   alt="Imagen promocional de Sippo Collaborator">
 </amp-img>
+
+Airship is a design library which includes a component library and a CSS framework designed and optimized for creating map visualizations.
+
 
 
 ## CARTO-VL
@@ -30,6 +46,7 @@ title: Projects
   alt="Imagen promocional de Sippo Collaborator">
 </amp-img>
 
+CARTO-VL is a vector map rendering library build with javascript using WebGL APIs. CARTO-VL has a custom styling language allowing users to create [very powerful visualizations](https://cartodb.github.io/carto-vl/examples/editor/index.html#eyJhIjoid3dpIiwiYiI6IiIsImMiOiJjYXJ0b3ZsIiwiZCI6Imh0dHBzOi8ve3VzZXJ9LmNhcnRvLmNvbSIsImUiOiJ3aWR0aDogIHpvb20oKSAqIChhbmltYXRpb24oJGRheSwgMTQwLCBmYWRlKDAuMDUsIDAuMikpICsgMC41KVxuY29sb3I6ICByYW1wKGxpbmVhcihjbHVzdGVyQXZnKCR0ZW1wKSwgMCwzMCksIHRlYWxyb3NlKVxuc3Ryb2tlV2lkdGg6IDBcbmZpbHRlcjogYW5pbWF0aW9uKCRkYXksIDE0MCwgZmFkZSgwLjA1LCAwLjIpKSArIDAuMDVcbiIsImYiOnsibG5nIjoyNC43MzU1Njg1MjA0MDI5MiwibGF0IjoxOS4xNjM0NzA5Nzg3NTQ5NDR9LCJnIjowLjg0Mzg2NjQzOTIzMTI4NCwiaCI6IkRhcmtNYXR0ZXIiLCJpIjoiZGF0YXNldCJ9)
 
 ## Blive
 `2017` - Quobis, Focus Telecom, Bezeq

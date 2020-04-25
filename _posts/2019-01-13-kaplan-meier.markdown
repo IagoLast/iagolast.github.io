@@ -47,7 +47,7 @@ survObject <- Surv(data$tiempo, data$evento)
 
 ### Kaplan-Meier en R
 
-La librería [survival](https://cran.r-project.org/web/packages/survival/index.html) también nos ofrece la función [survdiff](https://stat.ethz.ch/R-manual/R-devel/library/survival/html/survdiff.html) que dados unos datos de supervivencia nos generará una aproximación de Kaplan-Meier.
+La librería [survival](https://cran.r-project.org/web/packages/survival/index.html) también nos ofrece la función [survfit](https://stat.ethz.ch/R-manual/R-devel/library/survival/html/survfit.html) que dados unos datos de supervivencia nos generará una aproximación de Kaplan-Meier.
 
 ```R
 fit <- survfit(survObject ~ 1, data = data)

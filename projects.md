@@ -146,19 +146,3 @@ For a while I collaborated in the LIA2 laboratory of the University of Coruña i
 # Publications 
 ### [Fast mrMR](http://onlinelibrary.wiley.com/doi/10.1002/int.21833/full)
 GPU implementation of a high performance feature selection algorithm.
-
-# Pet Projects
-### [Bising](https://github.com/IagoLast/Bising)
-Alternative app to Barcelona's official Bicing service.
-
-### [Squire](https://iagolast.github.io/squire-core/)
-Javascript library to generate svg badges.
-
-### [Horarios Renfe](https://iagolast.github.io/renfehorarios)
-Simple PWA to see train timetables.
-
-### [Horarios Monbus](https://iagolast.github.io/monbus)
-Same for local buses.
-
-### [Instranslator](https://flashlight.nateparrott.com/plugin/Instranslator)
-Flashlight plugin to translate text. 

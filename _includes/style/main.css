@@ -19,11 +19,6 @@ html {
   font-size: 20px;
 }
 
-#write {
-  max-width: 914px;
-  text-align: justify;
-}
-
 p {
   font-size: 1rem;
 }
@@ -59,9 +54,10 @@ mark {
 }
 
 .wrapper {
-  max-width: 980px;
+  max-width: 900px;
   margin: auto;
   padding: 0 30px;
+  text-align: justify;
 }
 
 time {

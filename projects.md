@@ -18,7 +18,11 @@ title: Projects
   alt="Captura de pantalla de you can book me">
 </amp-img>
 
-Online scheduling web application.
+
+Online scheduling web application. Connect with your calendar and only share your availability with anyone. The app was build on `React` and is successfully used by thousands of happy clients everyday.
+
+More info <a href="//youcanbook.me" target="_blank">YouCanBook.me</a>
+
 
 
 ## Reveal
@@ -32,7 +36,9 @@ Online scheduling web application.
   alt="Captura de pantalla de Reveal">
 </amp-img>
 
-Reveal is a demo application built using Airship and CARTO-VL.
+Site planning using advanced location intelligence. Reveal was built using our in house libraries like Airship CARTO-VL and Vue.js.
+
+More info <a href="https://carto.com/solutions/reveal/" target="_blank">CARTO - Reveal</a> 
 
 ## Airship
 `2018` - CARTO

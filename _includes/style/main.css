@@ -17,6 +17,7 @@ html, body, #write {
 }
 
 h1, h2, h3, h4, h5, h6 {
+  text-align: left;
   font-family: 'Computer Modern';
 }
 
@@ -39,9 +40,10 @@ sup {
   margin: 0;
 }
 
-code {
+pre.highlight {
   background: #f2f2f2;
   font-size: 10px;
+  padding: 8px;
 }
 
 blockquote {
@@ -161,8 +163,9 @@ ul li a {
     font-size: 1em;
   }
 
-  code {
+  pre.highlight {
     font-size: 16px;
+    padding: 1rem;
   }
 
   ul li a {

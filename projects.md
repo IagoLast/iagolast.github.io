@@ -8,7 +8,7 @@ title: Projects
 `2020` - Apto payments
 
 
-<amp-img class="xl" src="/static/apto.png" 
+<amp-img class="xl" src="/static/apto.jpeg" 
   layout="responsive"
   width="2214"
   height="1192"

@@ -151,7 +151,7 @@ I worked on a new mobile payments application which uses QR codes to transfer pa
 `2012` - Coruña University, European Spacial Agency
 
 
-<amp-img class="xl" src="static/gaia.png" 
+<amp-img class="xl" src="static/gaia.jpeg" 
   layout="responsive"
   width="768"
   height="469"

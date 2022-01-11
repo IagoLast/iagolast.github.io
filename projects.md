@@ -4,7 +4,7 @@ title: Projects
 ---
 # Work experience
 
-## YouCanBookMe App
+## Instant Issuance
 `2020` - Apto payments
 
 

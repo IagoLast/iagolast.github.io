@@ -99,8 +99,8 @@ Blive was a custom implementation of the Sippo collaborator. Blive forced us to 
 
 <amp-img class="xl" src="/static/collab.png" 
   layout="responsive"
-  width="2610"
-  height="1370"
+  width="515"
+  height="465"
   alt="Imagen promocional de Sippo Collaborator">
 </amp-img>
 

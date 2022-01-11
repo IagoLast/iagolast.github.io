@@ -1,11 +1,23 @@
 ---
-# You don't need to edit this file, it's empty on purpose.
-# Edit theme's home layout instead if you wanna make some changes
-# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: default
 title: Projects
 ---
 # Work experience
+
+## YouCanBookMe App
+`2020` - Apto payments
+
+
+<amp-img class="xl" src="/static/apto.png" 
+  layout="responsive"
+  width="2214"
+  height="1192"
+  alt="APTO payments screenshot">
+</amp-img>
+
+
+In 2020 I joined the Apto payments team to form and lead the frontend team. This team was in charge of building the instant issuance application, the website, some internal tools, the documentation, and the SDKs and javascript libraries from scratch. I helped define processes and workflows in the company and advocated creating an asynchronous work environment.
+
 
 ## YouCanBookMe App
 `2019` - YouCanBook.me
@@ -36,7 +48,7 @@ More info <a href="//youcanbook.me" target="_blank">YouCanBook.me</a>
   alt="Captura de pantalla de Reveal">
 </amp-img>
 
-Site planning using advanced location intelligence. Reveal was built using our in house libraries like Airship CARTO-VL and Vue.js.
+Site planning using advanced location intelligence. Reveal was built using our in house libraries like Airship CARTO-VL and Vue.js To demonstrate the power of our tools.
 
 More info <a href="https://carto.com/solutions/reveal/" target="_blank">CARTO - Reveal</a> 
 
@@ -48,10 +60,10 @@ More info <a href="https://carto.com/solutions/reveal/" target="_blank">CARTO - 
   layout="responsive"
   width="1280"
   height="720"
-  alt="Imagen promocional de Sippo Collaborator">
+  alt="Imagen promocional de Airship">
 </amp-img>
 
-Airship is a design library which includes a component library and a CSS framework designed and optimized for creating map visualizations.
+Airship is a design library which includes a component library build using stenciljs and a CSS framework optimized for creating map visualizations.
 
 
 
@@ -63,10 +75,10 @@ Airship is a design library which includes a component library and a CSS framewo
   layout="responsive"
   width="2610"
   height="1370"
-  alt="Imagen promocional de Sippo Collaborator">
+  alt="Mapa diseñado con carto VL">
 </amp-img>
 
-CARTO-VL is a vector map rendering library build with javascript using WebGL APIs. CARTO-VL has a custom styling language allowing users to create [very powerful visualizations](https://cartodb.github.io/carto-vl/examples/editor/index.html#eyJhIjoid3dpIiwiYiI6IiIsImMiOiJjYXJ0b3ZsIiwiZCI6Imh0dHBzOi8ve3VzZXJ9LmNhcnRvLmNvbSIsImUiOiJ3aWR0aDogIHpvb20oKSAqIChhbmltYXRpb24oJGRheSwgMTQwLCBmYWRlKDAuMDUsIDAuMikpICsgMC41KVxuY29sb3I6ICByYW1wKGxpbmVhcihjbHVzdGVyQXZnKCR0ZW1wKSwgMCwzMCksIHRlYWxyb3NlKVxuc3Ryb2tlV2lkdGg6IDBcbmZpbHRlcjogYW5pbWF0aW9uKCRkYXksIDE0MCwgZmFkZSgwLjA1LCAwLjIpKSArIDAuMDVcbiIsImYiOnsibG5nIjoyNC43MzU1Njg1MjA0MDI5MiwibGF0IjoxOS4xNjM0NzA5Nzg3NTQ5NDR9LCJnIjowLjg0Mzg2NjQzOTIzMTI4NCwiaCI6IkRhcmtNYXR0ZXIiLCJpIjoiZGF0YXNldCJ9)
+After Quobis, I entered Carto, a company specialized in geospatial software. And he was part of the team that he developed CARTO-VL, a vector map rendering library build with javascript using WebGL APIs. CARTO-VL has a custom styling language allowing users to create [very powerful visualizations](https://cartodb.github.io/carto-vl/examples/editor/index.html#eyJhIjoid3dpIiwiYiI6IiIsImMiOiJjYXJ0b3ZsIiwiZCI6Imh0dHBzOi8ve3VzZXJ9LmNhcnRvLmNvbSIsImUiOiJ3aWR0aDogIHpvb20oKSAqIChhbmltYXRpb24oJGRheSwgMTQwLCBmYWRlKDAuMDUsIDAuMikpICsgMC41KVxuY29sb3I6ICByYW1wKGxpbmVhcihjbHVzdGVyQXZnKCR0ZW1wKSwgMCwzMCksIHRlYWxyb3NlKVxuc3Ryb2tlV2lkdGg6IDBcbmZpbHRlcjogYW5pbWF0aW9uKCRkYXksIDE0MCwgZmFkZSgwLjA1LCAwLjIpKSArIDAuMDVcbiIsImYiOnsibG5nIjoyNC43MzU1Njg1MjA0MDI5MiwibGF0IjoxOS4xNjM0NzA5Nzg3NTQ5NDR9LCJnIjowLjg0Mzg2NjQzOTIzMTI4NCwiaCI6IkRhcmtNYXR0ZXIiLCJpIjoiZGF0YXNldCJ9)
 
 ## Blive
 `2017` - Quobis, Focus Telecom, Bezeq
@@ -76,7 +88,7 @@ CARTO-VL is a vector map rendering library build with javascript using WebGL API
   layout="responsive"
   width="1402"
   height="932"
-  alt="Imagen promocional de Sippo Collaborator">
+  alt="Aplicación completamente internacionalizada a un idioma no latino">
 </amp-img>
 
 Blive was a custom implementation of the Sippo collaborator. Blive forced us to make a very customizable product. During this project I learned a lot about accessibility, support for RTL languages and customization of apps.
@@ -85,20 +97,20 @@ Blive was a custom implementation of the Sippo collaborator. Blive forced us to 
 `2017` - Quobis
 
 
-<amp-img class="xl" src="https://www.quobis.com/wp-content/uploads/2018/02/Responsive-showcase-presentation4.png" 
+<amp-img class="xl" src="/static/collab.png" 
   layout="responsive"
-  width="1400"
-  height="800"
+  width="2610"
+  height="1370"
   alt="Imagen promocional de Sippo Collaborator">
 </amp-img>
 
-Sippo collaborator provides a complete set of real time comunication features like video conferencing, chat, call recording, and file sharing.
+At Quobis at worked on an Angular.js application called Sippo collaborator. This app provides a complete set of real time comunication features like video conferencing, chat, call recording, and file sharing. This implied an intensive use of javascript and browser libraries.
 
 ## Trebo
 `2017` - M&G Labs
 
 
-<amp-img class="xl" src="http://www.stefaniacasal.com/assets/projects/trebo/1.png" 
+<amp-img class="xl" src="/static/trebo.png" 
   layout="responsive"
   width="4836"
   height="2720"
@@ -139,7 +151,7 @@ I worked on a new mobile payments application which uses QR codes to transfer pa
 `2012` - Coruña University, European Spacial Agency
 
 
-<amp-img class="xl" src="https://www.cosmos.esa.int/documents/29201/29227/Gaia_crop.jpg/888b7123-3d1d-4f44-96ab-9ada17d9a063?t=1378475992238" 
+<amp-img class="xl" src="static/gaia.png" 
   layout="responsive"
   width="768"
   height="469"
